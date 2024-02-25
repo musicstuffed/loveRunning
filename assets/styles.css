@@ -44,6 +44,7 @@ h1 {
     list-style-type: none;
     font-size: 110%;
     letter-spacing: 4px;
+    background-color: ffffff;
 }
 #menu > li {
     margin-bottom: 1em;
@@ -78,7 +79,7 @@ nav {
 
 /* main content */
 main {
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(35, 198, 248);
     /* make element take up surplus space */
     flex: 1 0 auto;
     margin-top: 47px;
@@ -88,7 +89,7 @@ footer {
     background-color: rgb(200, 255, 0);
 }
 /* Media query tablets and larger(758px and upwards) */
-@media screen and (min-width: 768) {
+@media screen and (min-width: 768px) {
     /* Header */
     nav {
         display: block;
@@ -100,4 +101,10 @@ footer {
     #menu {
         display: flex;
     }
+    #menu > li {
+        padding-left: 1rem;
+    }
+    .nav-toggle-label {
+        display: none;
+    } 
 }

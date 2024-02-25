@@ -76,13 +76,19 @@ nav {
 .nav-toggle-label {
     font-size: 2rem;
 }
+/* logo size for desktop */
+#logo {
+    font-size: 200%;
+    line-height: 75px;
+    margin: 0 0.5rem;
+}
 
 /* main content */
 main {
     background-color: rgb(35, 198, 248);
     /* make element take up surplus space */
     flex: 1 0 auto;
-    margin-top: 47px;
+    margin-top: 79px;
 }
 /* Footer */
 footer {

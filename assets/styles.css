@@ -1,5 +1,6 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
 /* Over rides the default stylesheet of a web browser */
 * {
     padding: 0;
@@ -7,6 +8,7 @@
     box-sizing: border-box;
     font-family: anta;
 }
+
 /* General Styles */
 body {
     min-height: 100vh;
@@ -29,29 +31,35 @@ header {
     align-items: baseline;
 
 }
+
 header a {
-    
+
     text-decoration: none;
     color: inherit;
 }
+
 h1 {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
 }
+
 #menu {
     list-style-type: none;
     font-size: 110%;
     letter-spacing: 4px;
     background-color: ffffff;
 }
-#menu > li {
+
+#menu>li {
     margin-bottom: 1em;
 }
+
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
+
 /* Navbar styles with dropdown toggle */
 
 nav {
@@ -63,19 +71,23 @@ nav {
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
 }
+
 /* NAv toggle */
 /* nav toggle with psuedoclass and tilde for adjoining navigation */
 #nav-toggle:checked~nav {
     display: block;
     top: 100%;
 }
+
 #nav-toggle {
     display: none;
 
 }
+
 .nav-toggle-label {
     font-size: 2rem;
 }
+
 /* logo size for desktop */
 #logo {
     font-size: 200%;
@@ -90,12 +102,15 @@ main {
     flex: 1 0 auto;
     margin-top: 79px;
 }
+
 /* Footer */
 footer {
     background-color: rgb(200, 255, 0);
 }
+
 /* Media query tablets and larger(758px and upwards) */
 @media screen and (min-width: 768px) {
+
     /* Header */
     nav {
         display: block;
@@ -104,13 +119,24 @@ footer {
         width: fit-content;
         padding-right: 1rem;
     }
+
     #menu {
         display: flex;
     }
-    #menu > li {
+
+    #menu>li {
         padding-left: 1rem;
     }
+
     .nav-toggle-label {
         display: none;
-    } 
+    }
+}
+
+/* Large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
+    }
+
 }

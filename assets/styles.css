@@ -104,8 +104,19 @@ main {
 }
 
 /* Footer */
-footer {
-    
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
 }
 
 /* Media query tablets and larger(758px and upwards) */
